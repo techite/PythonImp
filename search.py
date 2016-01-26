@@ -6,6 +6,7 @@ menu[3]="Dogpile"
 menu[4]="DuckDuckGo"
 menu[5]="Ecosia"
 menu[6]="Exit()"
+menu[7]="All()"
 print "#################################"
 print " Choose Search Engine - > Fire Query"
 print " By Shashi Prakash Agarwal" 
@@ -30,5 +31,11 @@ while True:
     elif selection == '6':
         print "Bye Bye!"
         break
+    elif selection == '7':
+        webbrowser.open('http://google.com/search?q='+search_query)
+        webbrowser.open('http://yahoo.com/search?p='+search_query)
+        webbrowser.open('http://dogpile.com/search/web?q='+search_query)
+        webbrowser.open('http://duckduckgo.com/?q='+search_query)
+        webbrowser.open('http://ecosia.com/search?q='+search_query)
     else:
         print "Unknown Option Selected!"
